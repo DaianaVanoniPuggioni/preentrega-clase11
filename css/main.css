@@ -1,0 +1,158 @@
+/*GENERALES*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+section {
+    padding: 32px;
+}
+
+footer {
+    text-align: center;
+    background-color: #000;
+    padding: 10px;
+    color: aliceblue;
+    margin-top: 32px;
+}
+
+span {
+    font-size: 12px;
+}
+
+/*NAV Y HEADER IMAGENES*/
+.nav__logo {
+    width: 150px;
+    height: auto;
+}
+
+.estilo__imgbackground {
+    background-repeat: no-repeat;
+    object-fit: cover;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00000049;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.caja__header {
+    background-image: url(../img/principal.webp);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.nuevo__caja {
+    background-image: url(../img/nuevo-mobile.jpg);
+    height: 200px;
+    background-position: center;
+    margin: 32px;
+}
+
+.accesorios__caja {
+    background-image: url(../img/accesorios-img2-mobile.jpg);
+    height: 200px;
+    background-position: center;
+    margin: 32px;
+}
+
+.celulares__caja {
+    background-image: url(../img/tienda-celulares-mobile.jpg);
+    height: 300px;
+    background-position: left bottom;
+    background-attachment: scroll;
+    margin: 32px;
+}
+
+.header__cajacelulares {
+    background-image: url(../img/principal__celulares.webp);
+    background-attachment: fixed;
+
+}
+
+.header__cajaaccesorios {
+    background-image: url(../img/accesorios-img.webp);
+    background-attachment: fixed;
+}
+
+.header__cajacontacto {
+    background-image: url(../img/contacto-img.jpg);
+    background-attachment: fixed;
+}
+
+.header__cajacarrito {
+    background-image: url(../img/carrito-img.jpg);
+    background-attachment: fixed;
+}
+
+.header__cajaheight {
+    height: 100vh;
+}
+
+
+/* SERVICIOS*/
+.main__servicios div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*CARDS*/
+.card {
+    margin-top: 32px;
+    box-shadow: 2px 6px 8px 0 #9090972e;
+    border-radius: 0;
+}
+
+
+.img__card:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (min-width: 780px) {
+    .celulares__caja {
+        background-attachment: fixed;
+    }
+
+    .nuevo__caja {
+        background-image: url(../img/nuevo-celulares.jpg);
+
+    }
+
+    .accesorios__caja {
+        background-image: url(../img/accesorios-img2.jpg);
+    }
+
+    .header__cajaheight {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .nav__collapse {
+        justify-content: flex-end;
+    }
+}
